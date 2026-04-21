@@ -21,9 +21,11 @@ chmod +x flatten_repo.py
 
 
 ### for flattening relgt repo
+```
 python ../flatten_git_repo/flatten_repo.py . -o dev-kyaw.git.repo -e arch.png c1_script docs expts LICENSE local_driver.sh notebooks pyg_wheels relbench_neigh.txt setup.sh tabpfn_icl_results.log tabpfn-v2-classifier-finetuned-zk73skhh.ckpt test_tabpfn.py wandb .ipynb_checkpoints dev-kyaw.git.repo
 
 git diff dev-kyaw dev-kyaw-og-pass -- codebook.py encoders.py local_module.py main_node_ddp.py model.py utils.py pass_sampler.py > git_diff_dev_kyaw_vs_dev_kyaw_og_pass
+```
 
 ### Basic usage
 ```bash
